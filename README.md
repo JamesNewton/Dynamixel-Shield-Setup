@@ -31,7 +31,7 @@ R | TX
 T | RX
 
 6. Cut the 12 volt adapter wires and strip them, then /carefully/ test to see which wire is positive and which negative before connecting to the shield. Getting that backwards will cost rather a lot. 
-7. Plug the sheild onto the Arduino.
+7. Plug the shield onto the Arduino.
 
 ### OPERATE:
 1. Plug the TTL Serial adapter into your PC USB. You will need to configure a serial terminal program like PuTTY, or RealTerm, or whatever to 115200 N 8 1 on whatever port that shows up on. 
