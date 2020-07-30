@@ -50,7 +50,7 @@
 #define NEW_BAUDRATE 115200 //1Mbsp
 
 #define MAX_BAUD  5
-const int32_t buad[MAX_BAUD] = {57600, 115200, 1000000, 2000000, 3000000};
+const int32_t buad[MAX_BAUD] = {1000000, 57600, 115200, 2000000, 3000000};
 
 Dynamixel2Arduino dxl(DXL_SERIAL, DXL_DIR_PIN);
 
@@ -63,12 +63,12 @@ void setup() {
   // Use UART port of DYNAMIXEL Shield to debug.
   DEBUG_SERIAL.begin(115200);   //set debugging port baudrate to 115200bps
   while(!DEBUG_SERIAL);         //Wait until the serial port is opened
-  DEBUG_SERIAL.print("Enter new ID (J6=3, J7=1):");
+  DEBUG_SERIAL.print("Enter new ID:");
   while( 0==new_id) {
     new_id = DEBUG_SERIAL.parseInt();
     }
 
-  for(int8_t protocol = 1; protocol < 3; protocol++) {
+  for(int8_t protocol = 2; protocol > 0; protocol--) {
     // Set Port Protocol Version. This has to match with DYNAMIXEL protocol version.
     dxl.setPortProtocolVersion((float)protocol);
     DEBUG_SERIAL.print("SCAN PROTOCOL ");
