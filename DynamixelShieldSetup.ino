@@ -100,6 +100,10 @@ void setup() {
               //id = new_id;
               DEBUG_SERIAL.print("ID has been successfully changed to ");
               DEBUG_SERIAL.println(new_id);
+              index = MAX_BAUD; //done, skip
+              protocol = 0; //done, skip
+              found_dynamixel = 1;
+              break;
             }else{
               DEBUG_SERIAL.print("Failed to change ID to ");
               DEBUG_SERIAL.println(new_id);
