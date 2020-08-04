@@ -36,13 +36,13 @@ T | RX
 ### OPERATE:
 1. Plug the TTL Serial adapter into your PC USB. You will need to configure a serial terminal program like PuTTY, or RealTerm, or whatever to 115200 N 8 1 on whatever port that shows up on. 
 2. Plug in a servo 
-3. Check that the SW2 "UART" switch is in "DYANMIXEL" vs "UPLOAD"
+3. Check that the SW2 "UART" switch is in "DYANMIXEL" vs "UPLOAD" (see top right of picture below, switch is toward top of picture)
 4. Turn on the AC adapter and verify that the Arduino power LED comes on. You should see "Enter new ID" on your terminal program.
-5. Turn on the SW1 servo "POWER" switch. Check that the Servo LED blinks. 
+5. Turn on the SW1 servo "POWER" switch. Check that the Servo LED blinks. (see bottom right of picture below, switch is toward top of picture)
 6. Enter an ID and watch it find the servo, change the baud rate, then change the ID.
 
 ### EXAMPLE:
-In this case, NEW_BAUDRATE was set to 115200. After pressing re-set on the Arduino, the operator enters "3" at the "Enter new ID:" prompt. 
+In this case, NEW_BAUDRATE was set to 115200 and the servo was brand new. After pressing re-set on the Arduino, the operator enters "3" at the "Enter new ID:" prompt. 
 
 ````
 Enter new ID:3
