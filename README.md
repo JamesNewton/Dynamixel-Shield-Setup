@@ -9,7 +9,7 @@ qty | item | price | source
 1   | Arduino | ~$25 | Arduino.cc (please support Arduino by buying real parts?)
 1   | Shield  | $20  | http://en.robotis.com/shop_en/item.php?it_id=902-0146-000
 1   | TTL Serial USB adapter | ~$2 | Google CP2102 or e.g.<BR> https://www.amazon.com/Diymore-Converter-Support-Windows-Arduino/dp/B0776T51YT/ref=sr_1_9
-1   | 12V adapter | ~$9 | Google AC/DC power adapter. e.g. <BR> https://www.amazon.com/Converter-Cigarette-Lighter-110-240V-Adapter/dp/B07DWXRD5F/ref=sr_1_4
+1   | DC adapter | ~$9 | Google AC/DC power adapter. The voltage should match the requirements of the servo. e.g. For the XC-430's <BR> https://www.amazon.com/Converter-Cigarette-Lighter-110-240V-Adapter/dp/B07DWXRD5F/ref=sr_1_4
 1   | 4 pin JST cable | $? | ???
 
 See: 
@@ -30,7 +30,7 @@ V | don't connect
 R | TX
 T | RX
 
-6. Cut the 12 volt adapter wires and strip them, then /carefully/ test to see which wire is positive and which negative before connecting to the shield. Getting that backwards will cost rather a lot. 
+6. Cut the DC volt adapter wires and strip them, then /carefully/ test to see which wire is positive and which negative before connecting to the shield. Getting that backwards will cost rather a lot. Again, the voltage should match the servo.
 7. Plug the shield onto the Arduino.
 
 ### OPERATE:
